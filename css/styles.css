@@ -44,3 +44,6 @@ p {
   border: solid white;
 }
 
+#html, #css {
+  display: none;
+}

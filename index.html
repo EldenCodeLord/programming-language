@@ -29,15 +29,30 @@
           believe that these are good programming languages to begin with. They will teach
           you basic terminology and syntax structures.
       </p>
-      <select class="form-control" id="languages">
-        <option value="html">HTML</option>
-        <option value="css">CSS</option>
-        <option value="javascript">JavaScript</option>
-      </select>
       <div class="container">
-        <div id="languages">
-          <div id="html"></div>
-          <div id="css"></div>
+        <h1><marquee>HTML, CSS, JavaScript, Ruby, C#, Python, Swift</marquee></h1>
+    
+        <p><em>Type a programming language in the box!:</em></p>
+    
+        <form id="languages">
+          <label for="typeit">Type it!</label>
+          <input id="typeit" type="text">
+          <label for="selectone">Select one!</label>
+          <select id="selectone">
+            <option value="HTML">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="ruby">Ruby</option>
+            <option value="swift">Swift</option>
+          </select>
+    
+          <button type="submit" class="btn">Click</button>
+        </form>
+    
+        <div id="answer">
+          <p>You will have to pay $<span id="language"></span> per month to get car insurance. You should probably just bike or take the bus.</p>
+        </div>
+      </div>
     </body>
   </head>
   
