@@ -23,6 +23,7 @@ h2 {
   font-size: 36px;
   font-family: fantasy;
   background-color: gray;
+  text-align: center;
 }
 
 .list {
@@ -33,8 +34,9 @@ h2 {
 }
 
 .column {
-  width: 300px;
+  width: 275px;
   float: left;
+  height: 475px;
 }
 
 p {
@@ -44,6 +46,11 @@ p {
   border: solid white;
 }
 
-#html, #css {
+.type {
+  text-align: center;
+  background-color: gray;
+}
+
+.html-showing {
   display: none;
 }
