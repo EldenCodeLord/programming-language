@@ -64,10 +64,11 @@ p {
   display: none; 
 }
 
-.css-showing {
-  display: none;
+.form-group {
+  color: red;
+  font-weight: 600;
 }
 
-.css-hidden {
+#story {
   display: none;
 }
