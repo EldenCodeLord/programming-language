@@ -7,20 +7,21 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("#formOne").submit((event) => {
+  $("form#list").submit(function(event) {
       event.preventDefault();
-      const person1Input = $("input#person1").val();
-      const person2Input = $("input#person2").val();
-      const animalInput = $("input#animal").val();
-      const question = $("input#question").val();
-      const otherQuestion = $("input#otherQuestion").val();
+      const favoriteNumber = $("input#favoriteNumber").val();
+        if (favoriteNumber >= 10) {
+          console.log('Try HTML!'); 
+        else if (favoriteNumber >= 100) 
+          console.log('TRY CSS');
+        else (favoriteNumber >= 200) 
+          console.log('TRY JAVASCRIPT');
+        }
 
-      $(".person1").append(person1Input);
-      $(".person2").append(person2Input);
-      $(".animal").append(animalInput);
-      $(".question").append(questionInput);
-      $(".otherQuestion").append(otherQuestionInput);
+      $(".favoriteNumber").append(favoriteNumber);
+     
 
-      $(".story").show();
+      $("#list").show();
     });
 });
+
