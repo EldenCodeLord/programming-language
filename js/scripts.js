@@ -4,9 +4,7 @@ $(document).ready(function() {
    $(".html-hidden").toggle();
     newFunction();
   });
-});
 
-$(document).ready(function() {
   $("form#list").submit(function(event) {
       event.preventDefault();
       const favoriteNumber = $("input#favNum").val();
