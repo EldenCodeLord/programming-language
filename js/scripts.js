@@ -12,7 +12,7 @@ $(document).ready(function() {
           console.log('Try HTML!'); 
         } else if (favoriteNumber <= 100) {
           console.log('TRY CSS');
-        } else (favoriteNumber <= 200) {
+        } else {
           console.log('TRY JAVASCRIPT');
         }
 
