@@ -2,18 +2,20 @@ $(document).ready(function() {
    $("p").click(function() {
    $(".html-showing").toggle();
    $(".html-hidden").toggle();
-    newFunction();
   });
 
   $("form#list").submit(function(event) {
       event.preventDefault();
-      const favoriteNumber = $("input#favNum").val();
-        if (favoriteNumber <= 10) {
-          console.log('Try HTML!'); 
+      $('#displayresult').empty();
+        const favoriteNumber = $("input#favNum").val();
+        if (favoriteNumber == "") {
+          $('#displayresult').append('PLEASE INPUT A NUMBER!');
+        } else if (favoriteNumber <= 10) {
+          $('#displayresult').append('Try HTML!');
         } else if (favoriteNumber <= 100) {
-          console.log('TRY CSS');
+          $('#displayresult').append('TRY CSS!');
         } else {
-          console.log('TRY JAVASCRIPT');
+          $('#displayresult').append('TRY JAVASCRIPT!');
         }
 
     });
