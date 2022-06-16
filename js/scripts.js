@@ -9,13 +9,13 @@ $(document).ready(function() {
       $('#displayresult').empty();
         const favoriteNumber = $("input#favNum").val();
         if (favoriteNumber == "") {
-          $('#displayresult').append('PLEASE INPUT A NUMBER!');
+          $('#displayresult').append('Please input a number!');
         } else if (favoriteNumber <= 10) {
           $('#displayresult').append('Try HTML!');
         } else if (favoriteNumber <= 100) {
-          $('#displayresult').append('TRY CSS!');
+          $('#displayresult').append('Try CSS!');
         } else {
-          $('#displayresult').append('TRY JAVASCRIPT!');
+          $('#displayresult').append('Try JavaScript!');
         }
 
     });
